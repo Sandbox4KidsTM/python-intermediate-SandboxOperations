@@ -28,4 +28,5 @@ print(stack)
 
 print(stack.peek() == "Blue")
 print(stack.pop() == "Blue")
+stack.push("Gray")
 print(stack)
