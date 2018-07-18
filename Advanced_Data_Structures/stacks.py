@@ -2,6 +2,7 @@ class My_Stack():
 
     def __init__(self):
         # Create an empty Stack, we will be using a private list
+        self._stack = []
         pass
 
     def __repr__(self):
@@ -10,6 +11,7 @@ class My_Stack():
 
     def push(self, element):
         # Adds an element to the top of the stack.
+        self._stack.append(element)
         pass
 
     def pop(self):
