@@ -7,17 +7,16 @@ class My_Stack():
 
     def __repr__(self):
         # Return a string of the stack, top to bottom, seperated by comments
-        return ", ".join(str(x) for x in reversed(self._stack)
+        return ", ".join(str(x) for x in reversed(self._stack))
 
     def push(self, element):
         # Adds an element to the top of the stack.
         self._stack.append(element)
-        pass
 
     def pop(self):
         # Removes and returns the element at the top of the stack
-        pass
+        return self._stack.pop(-1)
 
     def peek(self):
         # Take a look at the top of the stack (return that element but do not remove it)
-        pass
+        return self._stack[-1]
